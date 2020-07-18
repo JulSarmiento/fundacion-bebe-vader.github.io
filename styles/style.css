@@ -66,7 +66,7 @@ body {
     border-radius: 1em;
     text-align: center;
     background-color: #e5d499;
-    padding: 5px 20px;
+    padding: 5px 10px;
     margin-bottom: 10px;
 }
 
@@ -79,7 +79,10 @@ body {
 
 .main-section-form {
     display: flex;
+    justify-content: center;
     flex-flow: column;
+    padding: 5%;
+    width: 255px;
 }
 
 .form-element {
@@ -125,12 +128,14 @@ body {
 /*Main Aside*/
 
 .main-aside {
-    border: 1px solid red;
+    background-color: #e5d499;
+    border-radius: 1em;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin: 10%;
 }
 
 .picture-one {

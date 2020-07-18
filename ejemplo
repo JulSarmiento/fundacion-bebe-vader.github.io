@@ -1,0 +1,79 @@
+-------- ------- --------------------------
+
+Clase Dog o Perro, si alguien coloca "Perros" lo desheredo.
+
+UID // Código unico del perro
+Nombre
+Raza = [Lista de razas comunes]
+Sexo = [true = Hembra, false = Macho]
+Tamaño = [Pequeño, Mediano, Grande]
+Foto = (<input type="file" accept="image/*">) Peeeeeeeeeero en este caso será el url de la imagen.
+    // Ejemplo = https://cdn3-www.dogtime.com/assets/uploads/gallery/chow-chow-dog-breed-pictures/3-fullbody.jpg
+Temperamento = [
+    0 = Calmado,
+    1 = Tímido,
+    2 = Jugetón,
+    3 = Temperamental,
+    4 = Peligroso,
+    5 = Odashi
+]
+Estado = [ 
+    0 = En adopción o disponible para adoptar,
+    1 = En proceso de adopción, 
+    2 = Adoptado
+]
+Observaciones = Campo texto para escribir lo que sea
+setAdoptionInfo(numero) -> asignar la información de adopción siempre y cuando cumpla las con condiciones
+    // Si está adoptado no se cambia
+    // Si está en proceso, sólo puede pasar a adoptado
+    // Si está disponible sólo puede pasar a en proceso
+getAdoptionInfo() -> retorna el nombre del estado
+
+Paso 1: Definir clase Perro o Dog
+Paso 2: Genera un formulario con los datos del perro
+Paso 3: Guardar eso se submitea el formulario y que aparezca una card con los perros
+Paso 4: Solicitar adopción del perro (si está disponible)
+Paso 5: Cambiar de estado a en proceso
+paso 6: Que pase 1 min y cambie a a doptado (o manual si quieren)
+paso 7: Poner perro como adoptado y que no se pueda adoptar
+paso 8: Hay que guardar los datos con el localstorage
+
+----------------- Ejemplo de clase Dog (sin terminar) --------------
+
+class Dog {
+    constructor(uuid, name, sex) {
+        this.uuid = uuid;
+        this.name = name;
+        this.sex = sex;
+        this.adoptionInfo = 0;
+    }
+
+    setAdoptionInfo(state) {
+        // Se hacen estas validaciones
+        // Si está adoptado no se cambia
+        // Si está en proceso, sólo puede pasar a adoptado
+        // Si está disponible sólo puede pasar a en proceso
+        this.setAdoptionInfo = state;
+    }
+
+    getAdoptionInfo() {
+        if (this.adoptionInfo === 0) {
+            return 'disponible';
+        } else if (this.setAdoptionInfo === 1) {
+            return 'en proceso';
+        } 
+        return 'adoptionInfo';
+    }
+}
+
+------ Ejemplo del get adoption elegante -------------
+
+class Dog {
+    static _ADOPTION_CHOICES = [
+        'disponible', 'En proceso', 'adoptado'
+    ]
+
+    getAdoptionInfo() {
+        return Dog._ADOPTION_CHOICES[this.adoptionInfo]
+    }
+}

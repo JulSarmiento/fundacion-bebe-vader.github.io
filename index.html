@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        
+        <title>Fundacion Dashinejo, el Divo | Julieth Sarmiento</title>
+    </head>
+
+    <body class="">
+
+        <header class="header">
+            <h1 class="header-title">Fundación Bebé Vader</h1>
+            <nav>
+                <ul class="header-list">
+                    <li><a href="#" class="header-list-element-link"></a>Formulario</li>
+                    <li><a href="#" class="header-list-element-link"></a>Listas</li>
+                    <li><a href="#" class="header-list-element-link"></a>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main wrapper">
+
+            <section class="main-section">
+                <h2 class="main-section-subtitle">Formulario de ingreso</h2>
+
+                <form class="main-section-form" action="" id="inscription" class="form">
+                
+                    <div class="form-element">
+                        <label for="name" >Nombre:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="age">Edad:</label>
+                        <select name="age" id="age" required>
+                            <option hidden selected></option>
+                            <option value="0"> 0 a 5 meses</option>
+                            <option value="1">5 meses a 9 meses</option>
+                            <option value="2">1 año a 4 años</option>
+                            <option value="3">5 años a 9 años</option>
+                            <option value="4">10 años a 15 años</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="sex">Sexo:</label>
+                        <select name="sex" id="sex" required>
+                            <option value=""></option>
+                            <option value="1">Hembra</option>
+                            <option value="0">Macho</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="breed">Raza:</label>
+                        <input type="text" name="breed" id="breed" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="special">Condiciones especiales:</label>
+                        <select name="special" id="special" required>
+                            <option hidden selected></option>
+                            <option value="yes">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="size">Tamaño:</label>
+                        <select name="size" id="size" required>
+                            <option hidden selected></option>
+                            <option value="0">No se sabe</option>
+                            <option value="1">Pequeño</option>
+                            <option value="2">Mediano</option>
+                            <option value="3">Grande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="ṕersonality">Temperamento:</label>
+                        <select name="personality" id="personality" required>
+                            <option hidden selected></option>
+                            <option value="0">Tranquilo</option>
+                            <option value="1">Nervioso</option>
+                            <option value="2">Juguetón</option>
+                            <option value="3">Dominante</option>
+                            <option value="4">Agresivo</option>
+                            <option value="5">Sumiso</option>
+                        </select>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="status">Estado:</label>
+                        <select name="status" id="status" required>
+                            <option hidden>Seleccione</option>
+                            <option value="0" selected></option>
+                            <option value="1" >En adopción</option>
+                            <option value="2">En proceso de adopción</option>
+                            <option value="3">Adoptado</option>
+                        </select>
+                    </div>
+                        
+                    <div class="form-element form-element-btn">
+                        <button type="submit" class="btn">Ingresar</button>
+                        <button type="reset" class="btn">Limpiar</button>
+                    </div>
+
+                </form>
+            </section>
+
+            <aside class="main-aside ">
+                <img class="picture-one" src="assets/images/portada.jpg" alt="Imagen de bebe vader cuando tenia 2 meses">
+                <div>
+                    <ul class="aside-list">
+                        <li><a href="" class="aside-list-element-link">Ver todos los perros</a></li>
+                        <li><a href="" class="aside-list-element-link">Ver perros en adopción</a></li>
+                        <li><a href="" class="aside-list-element-link">Ver perros en proceso de adopción</a></li>
+                        <li><a href="" class="aside-list-element-link">Ver perros adoptados</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+        </main>
+
+        <section class="cards-container wrapper">
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro1.jpeg" alt="foto del perro 1">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro2.jpeg" alt="foto del perro 2">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro3.jpeg" alt="foto del perro 3">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro4.jpeg" alt="foto del perro 4">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro5.jpeg" alt="foto del perro 5">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro6.jpeg" alt="foto del perro 6">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro7.jpeg" alt="foto del perro 7">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro8.jpeg" alt="foto del perro 8">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro9.jpeg" alt="foto del perro 9">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+            <div class="card">
+                <img class="card-picture" src="assets/images/perro10.jpeg" alt="foto del perro 10">
+                <aside class="card-information">
+                    <h3 class="card-information-name">Nombre:</h3>
+                    <p class="card-information-text">Edad: </p>
+                    <p class="card-information-text">Sexo: </p>
+                    <p class="card-information-text">Raza: </p>
+                    <p class="card-information-text">Condiciones especiales: </p>
+                    <p class="card-information-text">Tamaño: </p>
+                    <p class="card-information-text">Temperamento: </p>
+                    <p class="card-information-text">Estado: </p>
+                </aside>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p><small>by: Julieth Sarmiento</small></p>
+        </footer>
+
+    </body>
+</html>

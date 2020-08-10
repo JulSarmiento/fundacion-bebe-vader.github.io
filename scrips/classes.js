@@ -33,7 +33,7 @@ class Dog {
 function addDog(name, age, sex, breed, specialCondition, size, behavior, status) {
     let newDog = new Dog(name, age, sex, breed, specialCondition, size, behavior, status);
     allDogs.push(newDog)
-    results.insertAdjacentHTML = printDogCard(newDog);
+    results.insertAdjacentHTML('beforeend', printDogCard(newDog));
 }
 
 function addAviableDog() {

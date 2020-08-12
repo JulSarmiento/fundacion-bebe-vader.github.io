@@ -165,7 +165,18 @@ body {
     color: #d1cbb8; 
     background-color: #6e152e;
 }
+.aside-list li button {
+    border: none;
+    outline: none;
+    color: #d1cbb8; 
+    background-color: #6e152e;
+}
 
+
+.aside-list li button:hover {
+    background-color: #DCE9BE;
+    color: #030303;
+}
 .aside-list li:hover {
     background-color: #DCE9BE;
     color: #030303;
@@ -315,17 +326,36 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .wrapper {
-        margin: 2% 15%;
+@media screen and (min-width: 1440px){
+    .main {
+        margin: 2% auto;
+        justify-content: space-evenly;
+        max-width: 1200px;
     }
 
-    .main-section {
-        width: 450px;
-        padding: 5%;
-     }
- 
-     .main-section-form {
-         width: 450px;
-     }
+    .main-aside {
+        flex-flow: column wrap;
+
+    }
+
+    .cards-container {
+        grid-template-columns: 33% 33% 33%;
+    }
 }
+
+@media screen and (min-width: 2560px){
+    .main {
+        margin: 2% auto;
+        justify-content: space-evenly;
+        max-width: 1200px;
+    }
+
+    .main-aside {
+        flex-flow: column wrap;
+    }
+
+    .cards-container {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+

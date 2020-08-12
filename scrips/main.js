@@ -17,7 +17,7 @@ function addDog(name, age, sex, breed, specialCondition, size, behavior, status)
 /**
  * Esta funcion filtra los perros segundo el parametro del status (adoptado, en adopción y en proceso de adopción.)
  */
-function filterDogsstupidHabisFunction(status) {
+function filterDog(status) {
     return allDogs.filter((dog) => {
         return dog.status === status 
     });
@@ -29,21 +29,21 @@ function filterDogsstupidHabisFunction(status) {
 filters.forEach((filter) => {
     filter.addEventListener('click', (event) => {
         const iD = event.target.id;
-        let stupidHabisFilter;
+        let itemToFilter;
         if(iD === 'all-dogs'){
-            stupidHabisFilter = allDogs;
+            itemToFilter = allDogs;
         }else if(iD === 'in-adoption') {
-            stupidHabisFilter = filterDogsstupidHabisFunction('En adopción');
+            itemToFilter = filterDogs('En adopción');
         }else if(iD === 'in-process'){
-            stupidHabisFilter = filterDogsstupidHabisFunction('En proceso de adopción');
+            itemToFilter = filterDogs('En proceso de adopción');
         }else {
-            stupidHabisFilter = filterDogsstupidHabisFunction('Adoptado');
+            itemToFilter = filterDogs('Adoptado');
         }
         results.innerHTML = '';
-        stupidHabisFilter.forEach((dog) => {
+        itemToFilter.forEach((dog) => {
             results.insertAdjacentHTML('beforeend', printDogCard(dog))
         })
-        console.log(stupidHabisFilter)
+        console.log(itemToFilter)
         console.log(`Le di click a ${iD}`)
     })
    

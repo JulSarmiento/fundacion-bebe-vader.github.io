@@ -33,11 +33,11 @@ filters.forEach((filter) => {
         if(iD === 'all-dogs'){
             itemToFilter = allDogs;
         }else if(iD === 'in-adoption') {
-            itemToFilter = filterDogs('En adopción');
+            itemToFilter = filterDog('En adopción');
         }else if(iD === 'in-process'){
-            itemToFilter = filterDogs('En proceso de adopción');
+            itemToFilter = filterDog('En proceso de adopción');
         }else {
-            itemToFilter = filterDogs('Adoptado');
+            itemToFilter = filterDog('Adoptado');
         }
         results.innerHTML = '';
         itemToFilter.forEach((dog) => {
